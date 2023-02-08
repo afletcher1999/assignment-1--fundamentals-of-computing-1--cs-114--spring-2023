@@ -45,7 +45,7 @@ public class Assignment1 {
     RandomNumber = RandomNumberGenerator.nextInt(16353) + 32;
     System.out.println("Random number generating... Complete");
 
-    //Outputs a concatanation of the three inputs together
+    //Outputs a concatenation of the three inputs together
     System.out.println("Your new string is: " + Celsius + AdjustedInput1 + RandomNumber);
     scan.close();
   }
