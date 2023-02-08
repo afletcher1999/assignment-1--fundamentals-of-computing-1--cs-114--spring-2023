@@ -20,6 +20,7 @@ public class Assignment1 {
     Random RandomNumberGenerator = new Random(); // Random number generator
     int RandomNumber; // Random number variable
 
+    //Prints my initials
     System.out.println("        A         FFFFFFFFFF");
     System.out.println("       AAA        FFF");
     System.out.println("      AA AA       FFF");
@@ -28,20 +29,24 @@ public class Assignment1 {
     System.out.println("   AAAAAAAAAAA    FFF");
     System.out.println("  AA         AA   FFF");
     System.out.println(" AA           AA  FFF");
-    System.out.println("AA             AA FFF\n"); //Prints my initials
+    System.out.println("AA             AA FFF\n");
 
+    //Converts Farenheit to Celsius
     System.out.println("Please input a temperature in Farenheit:");
     Farenheit = scan.nextInt();
-    Celsius = ((Farenheit - TempConversionStep1)*TempConversionStep2); //Converts Farenheit to Celsius
+    Celsius = ((Farenheit - TempConversionStep1)*TempConversionStep2);
 
+    //Reverses the input and trims the first and last characters of the string
     System.out.println("Enter a 5-character string: ");
     UserInput = scan.next();
-    AdjustedInput1 = ("" + UserInput.charAt(3) + UserInput.charAt(2) + UserInput.charAt(1)); //Reverses the input and trims the first and last characters of the string
+    AdjustedInput1 = ("" + UserInput.charAt(3) + UserInput.charAt(2) + UserInput.charAt(1));
 
+    //Generates a random number between 32 and 16384 (inclusive)
     RandomNumber = RandomNumberGenerator.nextInt(16353) + 32;
-    System.out.println("Random number generating... Complete"); //Generates a random number between 32 and 16384 (inclusive)
+    System.out.println("Random number generating... Complete");
 
-    System.out.println("Your new string is: " + Celsius + AdjustedInput1 + RandomNumber); //Outputs a concatanation of the three inputs together
+    //Outputs a concatanation of the three inputs together
+    System.out.println("Your new string is: " + Celsius + AdjustedInput1 + RandomNumber);
     scan.close();
   }
 }
